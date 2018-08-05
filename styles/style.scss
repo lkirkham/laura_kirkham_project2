@@ -1,0 +1,626 @@
+@import "partials/setup";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 1px solid #2a2a2a;
+  border-radius: 30px;
+  padding: 10px 50px;
+  background-color: transparent;
+  font-family: "Catamaran", sans-serif;
+  color: #2a2a2a;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center
+}
+
+.btn:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.footer-btn {
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  right: 0;
+  margin: 0;
+}
+
+.footer-btn:hover {
+  color: #285d64;
+}
+
+// ====== GENERAL TYPOGRAPHY STYLES STARTS
+
+.text-block__heading,
+.features__heading,
+.testimonials__heading,
+.content-slider_heading,
+.news__heading,
+.ask-a-question__heading {
+  font-family: "Catamaran", sans-serif;
+  font-size: 4.6rem;
+  color: #2a2a2a;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials__content__copy__subhead,
+.horizontal-gallery__figure__link__caption__heading,
+.gallery__navigation__list__item,
+.gallery__navigation__list__link,
+.gallery__images__caption__heading,
+.footer-main__heading {
+  font-family: "Catamaran", sans-serif;
+  color: #2a2a2a;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.news__article__heading,
+.ask-a-question__form__input,
+.ask-a-question__form__input::placeholder {
+  font-family: "Catamaran", sans-serif;
+  color: #2a2a2a;
+  opacity: 1;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+ .footer-legal__copy {
+   font-family: "Catamaran", sans-serif;
+   color: #fff;
+ text-align: center; 
+font-size:1.6rem;
+font-weight: 700;
+text-transform: uppercase;
+margin:0;
+}
+
+.text-block__copy,
+.testimonials__content__copy,
+.content-slider__slider__bottom__copy {
+  font-family: "Lato", sans-serif;
+  color: #2a2a2a;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.8rem;
+}
+
+.logo-heading {
+  font-family: "Catamaran", sans-serif;
+  color: #2a2a2a;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin:0;
+}
+
+// LINK STYLES
+
+a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+.footer-main__contact__details__link {
+  font-family: "Lato", sans-serif;
+  color: #2a2a2a;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.footer-main__contact__details__link:hover {
+  color: #285d64;
+}
+
+.footer-nav__list__link {
+  display: inline-block;
+  font-family: "Catamaran", sans-serif;
+  color: #2a2a2a;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+// GENERAL TYPOGRAPHY MODIFIERS
+
+.text--italic {
+  font-style: italic;
+}
+
+.text--white {
+  color: #fff;
+}
+
+// ====== GENERAL TYPOGRAPHY STYLES ENDS
+// ====== GALLERY HOVER STATES START
+.gallery__images figcaption,
+.horizontal-gallery figcaption {
+  display: none;
+}
+
+.gallery__images figure:hover figcaption,
+.horizontal-gallery figure:hover figcaption {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 50px;
+}
+// ====== GALLERY HOVER STATES END
+
+
+//============================================================
+// SECTIONS START
+//============================================================
+
+
+// ====== HEADER & NAV
+// header{
+//   z-index: 10;
+//   position:relative;
+// }
+// header .wrapper {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// .logo-heading {
+//   flex: 1 0 30%;
+// }
+// .header-nav {
+//   flex: 1 0 70%;
+// }
+// .header-nav__list {
+//   display: flex;
+//   list-style-type: none;
+//   justify-content: flex-end;
+//   text-transform: uppercase;
+//   font-family: "Catamaran", sans-serif;
+//   font-size: 2rem;
+//   font-weight: 600;
+// }
+// .header-nav__list__item__link {
+//   padding: 0 20px;
+//   color: #2a2a2a;}
+
+// ====== HEADER & NAV SECTION ENDS
+// ====== HERO SECTION STARTS {
+// .hero {
+//   position:absolute;
+//   height:100%;
+//   top: 0;
+// }
+// .hero .wrapper {
+//   display:flex;
+//   justify-content: flex-end;
+//   align-items:center;
+// }
+// .hero__content {
+//   position: absolute;
+//   height:100vh;
+//   text-align: right;
+//   align-self:center;
+// }
+// ====== HERO SECTION ENDS
+// ====== WELCOME SECTION STARTS
+.text-block {
+  position: relative;
+  text-align: center;
+  padding: 130px 0;
+}
+
+.text-block__copy {
+  margin: 30px 0px 75px 0px;
+  padding: 0 75px;
+}
+
+// ====== WELCOME SECTION ENDS
+// ====== FEATURES SECTION STARTS
+.features {
+  background-color: #bec884;
+  padding: 120px 0 120px 0;
+}
+
+.features {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+}
+
+.features__feature {
+  flex: 1 0 calc(33% - 30px);
+  padding: 0 50px;
+  margin: 0 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.features__feature__icon,
+.features__feature__title,
+.features__feature__copy {
+  text-align: center;
+  color: #2a2a2a;
+}
+
+.features__feature__icon {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.features__feature__title {
+  text-transform: uppercase;
+  font-family: "Catamaran", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  margin: 20px 0;
+}
+
+.footer-main__about__copy,
+.features__feature__copy {
+  font-family: "Lato", sans-serif;
+  color: #2a2a2a;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 0;
+}
+
+// ====== FEATURES SECTION ENDS
+// ====== TESTIMONIAL SECTION STARTS
+.testimonials {
+  padding: 120px 0 120px 0;
+}
+
+.testimonials__content {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.testimonials__content__figure {
+  flex: 1 0 calc(40% -50px;
+  );
+  margin: 0 50px 0 0;
+}
+
+.testimonials__content__copy {
+  flex: 1 0 calc(60%);
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.testimonials__content__copy__subhead,
+.testimonials__content__copy p {
+  flex: 1 0 calc(100%);
+}
+
+// ====== TESTIMONIAL SECTION ENDS
+// ====== HORIZONTAL GALLERY SECTION STARTS
+.horizontal-gallery {
+  display: flex;
+}
+
+.horizontal-gallery figure {
+  position: relative;
+}
+
+.horizontal-gallery__figure__link__caption__heading {
+  color: #fff;
+}
+// ====== HORIZONTAL GALLERY SECTION ENDS
+// ====== CONTENT SLIDER (ID = HAPPY CLIENTS) SECTION STARTS
+.content-slider {
+  background-color: #efefef;
+  padding: 130px 0;
+}
+
+.content-slider__slider__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+
+.content-slider__slider__top__controls {
+  color: #cacecf;
+  font-size: 4rem;
+  font-weight: 400;
+  flex: 1 0 40%;
+}
+
+.content-slider__slider__top__controls:hover {
+  color: #2a2a2a;
+}
+
+.content-slider__slider__top__figure {
+  margin: 0 35px;
+  flex: 1 0 10%;
+}
+
+.content-slider__slider__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 75px;
+  margin-top: 50px;
+}
+
+// CONTROL MODIFIERS
+.control--left {
+  text-align: right;
+}
+
+.control--right {
+  text-align: left;
+}
+
+// ====== CONTENT SLIDER (ID = HAPPY CLIENTS) SECTION ENDS
+// ====== NEWS (ID=LATEST NEWS) SECTION STARTS
+.news {
+  padding: 130px 0;
+}
+
+.news .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.news__article {
+  flex: 1 0 calc(100%/3 - 30px);
+  margin: 0 15px;
+}
+
+.news__article__figure {
+  margin-bottom: 25px;
+}
+
+.news__article__link {
+  font-family: "Catamaran", sans-serif;
+  color: #285d64;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.link--double-chevron {
+  font-size: 2.5rem;
+  padding: 0 15px;
+}
+
+.news__article__link:hover .link--double-chevron {
+  display: inline-block;
+  width: 50px;
+  animation: wiggle 0.7s infinite linear;
+}
+
+//wooo! my animation worked!
+@keyframes wiggle {
+  0% {
+    transform: translate(15px, 0);
+  }
+  50% {
+    transform: translate(-15px, 0);
+  }
+  100% {
+    transform: translate(15px, 0);
+  }
+}
+
+// ====== NEWS (ID=LATEST NEWS) SECTION ENDS
+// ====== ASK A QUESTION SECTION STARTS
+.ask-a-question {
+  padding: 120px 0;
+  background-color: #f2b094;
+}
+
+.ask-a-question__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ask-a-question__form__input {
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: transparent;
+  width: 80%;
+  padding: 10px 50px;
+  text-align: center;
+  flex: 1 0 100%;
+  margin-bottom: 50px;
+}
+
+.ask-a-question__form .btn {
+  flex: 1 0 100%;
+}
+// ====== ASK A QUESTION SECTION ENDS
+// ====== GALLERY SECTION STARTS
+.gallery {
+  padding: 130px 0;
+  background-color: #efefef;
+}
+
+.gallery .wrapper {
+  display:flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.gallery__navigation {
+  flex: 1 0 30%;
+  align-self: stretch;
+}
+.gallery__navigation_list {
+ background-color:#606060;
+ margin: 0 auto;
+ padding:0;
+list-style-type: none;
+text-align:center;
+height:100%;
+}
+
+.gallery__navigation__list__item:first-child{
+  padding: 70px 0 70px 0;
+  border-bottom: 1px #fff solid
+}
+
+.gallery__navigation__list__link a{
+  display:block;
+  padding: 30px 0;
+  margin:0;
+}
+
+.gallery__navigation__list__link a:hover{
+  background-color: #2a2a2a;
+}
+
+.gallery__images {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position:relative;
+  flex: 1 0 70%;
+  margin-left: 15px;
+}
+
+.gallery__images figure:nth-child(1),
+.gallery__images figure:nth-child(2) {
+  position: relative;
+  margin: 0 15px 15px 15px;
+}
+
+.gallery__images figure:nth-child(3),
+.gallery__images figure:nth-child(4) {
+  position: relative;
+  margin: 15px 15px 0 15px;
+}
+
+// ====== GALLERY SECTION ENDS
+// ====== FOOTER STARTS
+.footer-main {
+padding: 130px 0 50px 0;
+}
+
+.footer-main .wrapper {
+  display:flex;
+}
+
+.footer-main__section {
+  flex: 1 0 calc(33.333% - 100px);
+  margin: 0 50px;
+}
+
+// FOOTER FORM
+.footer-main__form {
+  border: 1px solid #2a2a2a;
+  position:flex;
+}
+
+.footer-main__form__input {
+  font-family: "Lato", sans-serif;
+  border: none;
+  width: 85%;
+  padding: 5px 5px;
+}
+
+.footer-main__form__input:focus {
+  background: #2a2a2a;
+  color: #fff;
+}
+
+// INSTAGRAM
+
+.instagram__container {
+display:flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.footer-main__section p:nth-child(2),
+.instagram__container {
+  margin-top:50px; }
+
+.instagram__post {
+  flex: 1 0 calc(25% - 10px);
+  margin: 0 10px 10px 0;
+}
+
+// FOOTER NAVIGATION
+
+.footer-nav .wrapper {
+    margin: 0 auto;
+}
+
+.logo-heading {
+  text-align:center;
+}
+
+.footer-nav_list {
+  list-style-type: none;
+  text-align:center;
+  padding:0;
+}
+
+.footer-nav__list__link a{
+  padding:25px;
+}
+
+.footer-nav__list__link a:hover {
+  color: #285d64;
+}
+// FOOTER LEGAL
+
+.footer-legal {
+ background-color:#2a2a2a;
+ padding: 5px;
+}
+// ====== FOOTER ENDS
