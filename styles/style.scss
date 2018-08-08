@@ -33,13 +33,16 @@ p {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center
+  text-align: center;
+  transition: background-color 0.5s;
 }
 
 .btn:hover {
   background-color: #2a2a2a;
   color: #fff;
 }
+
+
 
 // ====== GENERAL TYPOGRAPHY STYLES STARTS
 .hero__content__heading {
@@ -202,11 +205,14 @@ a {
   padding: 10px 50px;
 }
 
+
 // ====== GALLERY HOVER STATES END
 //============================================================
 // SECTIONS START
 //============================================================
 // ====== HEADER & NAV
+
+
 header {
   z-index: 20;
   position: relative;
@@ -381,6 +387,10 @@ header .wrapper {
   flex-wrap: wrap;
 }
 
+.testimonials__content__copy p {
+  margin-top:30px;
+}
+
 .testimonials__content__copy__subhead,
 .testimonials__content__copy p {
   flex: 1 0 calc(100%);
@@ -440,6 +450,10 @@ header .wrapper {
   margin-top: 50px;
 }
 
+.content-slider__slider__bottom__copy:last-of-type {
+  margin-top:30px;
+}
+
 // CONTROL MODIFIERS
 .control--left {
   text-align: right;
@@ -465,10 +479,15 @@ header .wrapper {
 .news__article {
   flex: 1 0 calc(100%/3 - 30px);
   margin: 0 15px;
+  transition: scale 0.8s;
 }
 
 .news__article__figure {
   margin-bottom: 25px;
+}
+
+.news__article:hover{
+ transform: scale(1.05);
 }
 
 .link--double-chevron {
@@ -522,6 +541,11 @@ header .wrapper {
   text-align: center;
   flex: 1 0 100%;
   margin-bottom: 50px;
+}
+
+.ask-a-question__form__input:focus {
+    border-top: 3px solid #2a2a2a;
+    border-bottom: 3px solid #2a2a2a;
 }
 
 .ask-a-question__form .btn {

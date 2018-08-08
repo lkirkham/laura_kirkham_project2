@@ -161,7 +161,10 @@ p {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
 
 .btn:hover {
   background-color: #2a2a2a;
@@ -567,6 +570,9 @@ header .wrapper {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
+.testimonials__content__copy p {
+  margin-top: 30px; }
+
 .testimonials__content__copy__subhead,
 .testimonials__content__copy p {
   -webkit-box-flex: 1;
@@ -635,6 +641,9 @@ header .wrapper {
   padding: 0 75px;
   margin-top: 50px; }
 
+.content-slider__slider__bottom__copy:last-of-type {
+  margin-top: 30px; }
+
 .control--left {
   text-align: right; }
 
@@ -661,10 +670,18 @@ header .wrapper {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 calc(100%/3 - 30px);
   flex: 1 0 calc(100%/3 - 30px);
-  margin: 0 15px; }
+  margin: 0 15px;
+  -webkit-transition: scale 0.8s;
+  -o-transition: scale 0.8s;
+  transition: scale 0.8s; }
 
 .news__article__figure {
   margin-bottom: 25px; }
+
+.news__article:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05); }
 
 .news__article__link:hover {
   text-decoration: underline; }
@@ -699,6 +716,10 @@ header .wrapper {
   -ms-flex: 1 0 100%;
   flex: 1 0 100%;
   margin-bottom: 50px; }
+
+.ask-a-question__form__input:focus {
+  border-top: 3px solid #2a2a2a;
+  border-bottom: 3px solid #2a2a2a; }
 
 .ask-a-question__form .btn {
   -webkit-box-flex: 1;
