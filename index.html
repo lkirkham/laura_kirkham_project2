@@ -18,8 +18,16 @@
       <div class="logo">
         <h3 class="logo-heading">Photography</h3>
       </div>
+      <p class="header-nav__mobile-menu">
+        <i class="fa fa-bars"></i>
+      </p>
       <nav class="header-nav">
         <ul class="header-nav__list">
+          <li class="header-nav__list__item nav--close">
+<a class="header-nav__list__item__link " href="#">
+  <i class="fas fa-times"></i>
+                      </a>
+          </li>
           <li class="header-nav__list__item">
             <a class="header-nav__list__item__link" href="#">Home</a>
           </li>
@@ -39,23 +47,23 @@
       </nav>
     </div>
   </header>
-  <main>
-    <div class="hero">
-      <div class="wrapper">
-        <div class="hero__content">
-          <h1 class="hero__content__heading">Welcome</h1>
-          <p class="hero__content__copy">to my photography website</p>
-          <button class="btn">Start</button>
-        </div>
+  <div class="hero">
+    <div class="wrapper">
+      <div class="hero__content">
+        <h1 class="hero__content__heading">Welcome</h1>
+        <p class="hero__content__copy">to my photography website</p>
+        <button class="btn">Start</button>
       </div>
-      <figure class="hero__figure__img">
-        <img class="hero__img" src="assets/image-1.jpeg" alt="dreamy view of italian coastline with houses and boats.">
-      </figure>
     </div>
+    <figure class="hero__figure__img">
+      <img class="hero__img" src="assets/image-1.jpeg" alt="dreamy view of italian coastline with houses and boats.">
+    </figure>
+  </div>
+  <main>
     <section id="welcome">
       <div class="text-block">
         <div class="wrapper">
-          <h2 class="text-block__heading">Welcome to photography</h2>
+          <h2 class="text-block__heading">Welcome to <span class="text--blue">photography</span></h2>
           <p class="text-block__copy">Suspendisse convallis turpis sem, nec tincidunt mauris tincidunt sed. Nunc vulputate feli s eu nunc moletie molestie
             vel tempus purus. Donec sed tellus mi. Fusce tincidunt tudin arcu, nec fringilla ex he rerit eget. Maecenas fringilla
             nequeeu est tincon. Vivamus consequat variusimperdiet. Mauris laoreet risus pharetra ollis.</p>
@@ -188,30 +196,42 @@
         <div class="wrapper">
           <article class="news__article">
             <figure class="news__article__figure">
-              <img src="assets/image-8.jpeg" alt="Photo of italian coast">
+              <a href="#">
+                <img src="assets/image-8.jpeg" alt="Photo of italian coast">
+              </a>
             </figure>
-            <h4 class="news__article__heading">My trip to italy</h4>
-            <a class="news__article__link" href="#">Read More
-              <span class="link--double-chevron"> &#187;</span>
-            </a>
+            <div class="news__article__copy">
+              <h4 class="news__article__heading">My trip to italy</h4>
+              <a class="news__article__link" href="#">Read More
+                <span class="link--double-chevron"> &#187;</span>
+              </a>
+            </div>
           </article>
           <article class="news__article">
             <figure class="news__article__figure">
-              <img src="assets/image-9.jpeg" alt="Greek house with white wall, blue window and door and two chairs outside">
+              <a href="#">
+                <img src="assets/image-9.jpeg" alt="Greek house with white wall, blue window and door and two chairs outside">
+              </a>
             </figure>
-            <h4 class="news__article__heading">Greece photoshoot</h4>
-            <a class="news__article__link" href="#">Read More
-              <span class="link--double-chevron"> &#187;</span>
-            </a>
+            <div class="news__article__copy">
+              <h4 class="news__article__heading">Greece photoshoot</h4>
+              <a class="news__article__link" href="#">Read More
+                <span class="link--double-chevron"> &#187;</span>
+              </a>
+            </div>
           </article>
           <article class="news__article">
             <figure class="news__article__figure">
-              <img src="assets/image-10.jpeg" alt="girl walking through narrow street">
+              <a href="#">
+                <img src="assets/image-10.jpeg" alt="girl walking through narrow street">
+              </a>
             </figure>
-            <h4 class="news__article__heading">Travelling with your partner</h4>
-            <a class="news__article__link" href="#">Read More
-              <span class="link--double-chevron"> &#187;</span>
-            </a>
+            <div class="news__article__copy">
+              <h4 class="news__article__heading">Travelling with your partner</h4>
+              <a class="news__article__link" href="#">Read More
+                <span class="link--double-chevron"> &#187;</span>
+              </a>
+            </div>
           </article>
         </div>
       </div>
@@ -310,7 +330,7 @@
             contain all of the best and modern trends. We are making web since 2005. Huge experience - is a best helper.
           </p>
         </div>
-        <div class="footer-main__section instagram">
+        <div class="footer-main__section">
           <h3 class="footer-main__heading">Instagram</h3>
           <div class="instagram__container">
             <div class="instagram__post">
@@ -355,19 +375,19 @@
             </div>
           </div>
         </div>
-            <!-- <div class="social">
+        <!-- <div class="social">
               <!-- <div class="social__icons"> -->
-                <!-- <div class="social__icons__facebook-icon"> -->
-                  <!-- <i class="fab fa-facebook-square"></i> -->
-                <!-- </div> -->
-                <!-- <div class="social__icons__instagram-icon"> -->
-                  <!-- <i class="fab fa-instagram"></i> -->
-                <!-- </div> -->
-                <!-- <div class="social__icons__pinterest-icon"> -->
-                  <!-- <i class="fab fa-pinterest-square"></i> -->
-                <!-- </div> -->
-              <!-- </div> -->
-            <!-- </div> -->
+        <!-- <div class="social__icons__facebook-icon"> -->
+        <!-- <i class="fab fa-facebook-square"></i> -->
+        <!-- </div> -->
+        <!-- <div class="social__icons__instagram-icon"> -->
+        <!-- <i class="fab fa-instagram"></i> -->
+        <!-- </div> -->
+        <!-- <div class="social__icons__pinterest-icon"> -->
+        <!-- <i class="fab fa-pinterest-square"></i> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </section>
     <section class="footer-nav">
@@ -398,6 +418,21 @@
       </div>
     </section>
   </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <script>
+    $(function () {
+      $('.header-nav__mobile-menu').click(function () {
+        $('.header-nav').toggleClass('show');
+        toggleClass('show');
+      });
+
+      $('.nav--close').click(function () {
+        $('.header-nav').removeClass('show');
+      });
+    });
+  </script>
 </body>
 
 </html>
