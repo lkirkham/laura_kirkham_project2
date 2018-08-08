@@ -870,10 +870,13 @@ header .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .footer-nav__list__link a {
   padding: 10px; }
@@ -1479,7 +1482,15 @@ header .wrapper {
   .gallery__images figure:nth-child(3) {
     margin: 5px 5px 0px 0px; }
   .gallery__images figure:nth-child(4) {
-    margin: 5px 0px 0px 5px; } }
+    margin: 5px 0px 0px 5px; }
+  .footer-nav_list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
